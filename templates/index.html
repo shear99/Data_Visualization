@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Selection</title>
+</head>
+<body>
+    <h1>데이터 선택</h1>
+    <form action="/plot" method="post">
+        {% for item in items %}
+            <input type="checkbox" name="items" value="{{ item }}">{{ item }}<br>
+        {% endfor %}
+        <input type="submit" value="Plot">
+    </form>
+</body>
+</html>
